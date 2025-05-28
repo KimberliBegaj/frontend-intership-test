@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Seksioni Hero */
+
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    margin-top: 70px;
+}
+
+.hero-text h1 {
+    font-size: 27px;
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    font-family: sans-serif;
+    margin-left: 1100px;
+}
+
+.indent {
+    margin-left: 75px;
+}
+
+.btn {
+    padding: 5px 18px;
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 1228px;
+
+}
+
+.btn:hover {
+    background-color: white;
+    color: rgb(175, 169, 169);
+}
+
+@media (max-width: 1400px) {
+    .hero-text {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 50px;
+        z-index: 2;
+    }
+
+    .hero-text h1 {
+        margin-left: 0;
+        text-align: right;
+        font-size: 24px;
+    }
+
+    .btn {
+        margin-left: 0;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .hero-image img {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-text {
+        padding-right: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
+
+
+/*Seksioni flexbox*/
+
+.product-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    background-color: white;
+}
+
+.product-card {
+    width: 30%;
+    min-width: 250px;
+    text-align: left;
+    padding: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card p {
+    margin-top: 10px;
+    color: #aca9a9;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .product-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%;
+        max-width: 400px;
+        padding: 15px;
+        text-align: left;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*Bottom*/
+
+.carousel-section {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+}
+
+.carousel-section h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 450;
+    color: #333;
+}
+
+.glide__slide {
+    padding: 10px;
+    text-align: center;
+}
+
+.glide__slide img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.glide__slide p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #aca9a9;
+}
+
+.glide__arrow {
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #aca9a9;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .glide__arrows {
+        display: none;
+    }
+}
